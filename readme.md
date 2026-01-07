@@ -1,1 +1,1 @@
-Sample readme
+A simple demonstration of github actions using Prettier, ESLint, and Jest tests
