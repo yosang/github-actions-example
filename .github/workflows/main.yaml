@@ -1,0 +1,14 @@
+name: JavaScript Workflow with Jest
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "14" 
+      - run: npm install
+      - run: npm run format
+      - run: npm run lint
+      - run: npm run test
